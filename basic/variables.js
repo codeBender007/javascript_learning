@@ -8,5 +8,10 @@ console.log(ad , ad1 , ad2 , ad3)
 function adn (){
     let a=12
 }
+
+function ad4(){
+
+}
+
 let cv =null
 console.log(typeof adn,cv)
