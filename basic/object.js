@@ -15,8 +15,22 @@ const obj2 = {
 const obj3 = Object.assign({},obj1 , obj2)
 // const obj3 = {...obj1 , ...obj2}
 
-console.log(obj3)
+// console.log(obj3)
 
 // in methods se ham object ki sari keys or values dekh skte h 
-console.log(Object.keys(obj3))
-console.log(Object.values(obj3))
+// console.log(Object.keys(obj3))
+// console.log(Object.values(obj3))
+
+
+// object with destructuring 
+const course  = {
+    courseName : "MDCA",
+    id : 1,
+    courseTeacher : "Adnan" 
+}
+
+const {courseTeacher} = course //normal destructuring
+const {courseTeacher : Teacher} = course //how to change object key name using destructuring
+
+console.log(courseTeacher) // in dono console ke same in
+console.log(Teacher)
