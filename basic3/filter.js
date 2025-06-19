@@ -5,5 +5,12 @@
 
 const arr = [9,8,7,6,5,4,3,2,1]
 
-const or = arr.filter( (val) => {return val<4} )
-console.log(or)
+// const or = arr.filter( (val) => {return val<4} )
+// console.log(or)
+
+
+// array methods chaining 
+const real = arr.map( (val) => val*10 )
+                .map( (val) => val+1 )
+                .filter( (val) => val>=40 )
+console.log(real)
