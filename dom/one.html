@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <style>
+        .document{
+            background-color:black;
+            color:white;
+        }
+    </style>
+    <body class="document">
+        <h1 class="firstc" id="firsti">Lorem ipsum dolor sit amet consectetur.</h1>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </body>
+    <script>
+        document.getElementById("firsti").style.color = 'blue';
+        const myul = document.querySelector("ul").querySelector("li").style.color = 'green';
+        const ul = document.querySelector("ul").querySelector("li").innerText = "five"
+
+         myul = document.querySelector("ul").querySelectorAll("li")[1].style.backgroundColor = "red"
+
+        // myul.querySelector("li").style.color = 'green';
+    </script>
+</html>
