@@ -19,11 +19,15 @@
     </body>
     <script>
         document.getElementById("firsti").style.color = 'blue';
-        const myul = document.querySelector("ul").querySelector("li").style.color = 'green';
-        const ul = document.querySelector("ul").querySelector("li").innerText = "five"
+        const myul = document.querySelector("ul")
+        myul.querySelector("li").style.color = 'green';
+        myul.querySelector("li").innerText = "five"
 
-         myul = document.querySelector("ul").querySelectorAll("li")[1].style.backgroundColor = "red"
+         myul.querySelectorAll("li")[1].style.backgroundColor = "red"
 
-        // myul.querySelector("li").style.color = 'green';
+        const oneul = document.querySelectorAll("ul")
+        oneul.forEach((l)=>{
+            l.style.backgroundColor = "pink"
+        })
     </script>
 </html>
