@@ -3,12 +3,45 @@
         <title></title>
     </head>
     <style>
-        .body{
+        .bod{
             background-color: #212121;
-            color:'white'
+            color: aliceblue;
         }
     </style>
-    <body class="body>
-
+    <body class="bod">
+        <h1>
+            this is two html
+        </h1>
+        <div class="parant">
+            <div class="day">monday</div>
+            <div class="day">tuesday</div>
+            <div class="day">wednesday</div>
+            <div class="day">thursday</div>
+        </div>
     </body>
+    <script>
+        const myd = document.querySelector(".parant")
+        console.log(myd.children[0])
+
+        for (let index = 0; index < myd.children.length; index++) {
+            console.log(myd.children[index].innerHTML)
+            
+        }
+
+
+        // this selectors is important  
+
+        console.log(myd.firstElementChild.innerHTML)
+        console.log(myd.lastElementChild.innerHTML)
+
+        const child = document.querySelector('.day')
+        console.log(child.parentElement)
+        console.log(child.nextElementSibling.innerHTML)
+
+
+
+        // conversion in array 
+        const arr = Array.from(myd.children)
+        console.log(arr)
+    </script>
 </html>
