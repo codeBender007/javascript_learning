@@ -1,42 +1,113 @@
+<!-- 1) addEventListener ek function/method hota h javascript ka jo kisi bi tag pr different 
+different event lagane me help krta hai -->
+                        | |
+                        | |
+                        \ /
+<!-- ******* addEventListener , removeEventListener , getElementById , getElementByClassName , 
+        querySelector , querySelectorAll , ETC ********* -->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    .bod{
+    .bod {
         background-color: #212121;
         color: wheat;
     }
-    .title{
+
+    .title {
         padding-left: 50%;
     }
-    span{
+
+    span {
         /* flex-direction: row; */
         margin-left: 10px;
     }
-    .container{
-        padding-top: 30%;
+
+    .container {
+        padding-top: 10%;
         /* margin-top: 20%; */
     }
-    .white{  
+
+    #white {
         padding: 30px;
         background-color: white;
     }
-    .blue{  
+
+    #blue {
         padding: 30px;
         background-color: blue;
     }
+    #green {
+        padding: 30px;
+        background-color: green;
+    }
+    #pink {
+        padding: 30px;
+        background-color: pink;
+    }
 </style>
+
 <body class="bod">
     <h1 class="title">Color Changer</h1>
+    <!-- <div class="container">
+        <span class="white" onclick="white()"></span>
+        <span class="blue" onclick="blue()"></span>
+        <span class="green" onclick="green()"></span>
+        <span class="pink" onclick="pink()"></span>
+    </div> -->
     <div class="container">
-        <span class="white"></span>
-        <span class="blue"></span>
-        <span class="green"></span>
-        <span class="pink"></span>
+        <span class="btn" id="white"></span>
+        <span class="btn" id="blue"></span>
+        <span class="btn" id="green"></span>
+        <span class="btn" id="pink"></span>
     </div>
 </body>
+
+    <!-- 2) ya dusra tareeka h button se color change krne ka lkn isme hamne addEventListener ka use
+    kra h  -->
+
+    <script>
+       const tot = document.querySelectorAll(".btn")
+       console.log(tot)
+
+            tot.forEach(button => {
+                button.addEventListener("click",(e)=>{
+            if(e.target.id == "white") document.querySelector(".bod").style.backgroundColor = "white"
+            else if(e.target.id == "blue") document.querySelector(".bod").style.backgroundColor = "blue"
+            else if(e.target.id == "green") document.querySelector(".bod").style.backgroundColor = "green"
+            else if(e.target.id == "pink") document.querySelector(".bod").style.backgroundColor = "pink"
+            console.log(e)
+            console.log(e.target)
+            });
+        })
+    </script>
+
+
+    <!-- 1) or ya first tareeka h jo mne khud kra th onclick event kara hai -->
+
+    <!-- <script>
+        function white(){
+           document.querySelector(".bod").style.backgroundColor = "white"
+        }
+        function blue(){
+           document.querySelector(".bod").style.backgroundColor = "blue"
+        }
+        function green(){
+           document.querySelector(".bod").style.backgroundColor = "green"
+        }
+        function pink(){
+           document.querySelector(".bod").style.backgroundColor = "pink"
+        }
+    </script> -->
 </html>
