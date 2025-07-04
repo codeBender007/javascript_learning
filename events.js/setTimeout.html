@@ -1,0 +1,28 @@
+<!-- ya setTimeout or clearTimeout funciton hai 
+setTimeout sirf ek bar run hota hai jo iske parameter me callback funciton 
+hota hai wo.
+or clearTimeout setTimeout ko run hone se phle stop krne ke liye
+use hota hai. or iske parameter me setTimeout ka reference dena hota hai
+setTimeout ko ek variable me use stor krke wo variable dena hota hai -->
+
+<html>
+    <head>
+        <title>setTimeout funciton </title>
+    </head>
+    <body>
+        <h1 class="heading">setTimeout</h1>
+        <input type="button" value="stop" class="stop">
+        <!-- <input type="button" value="start" class="start"> -->
+    </body>
+    <script>
+            const setTime = setTimeout(() => {
+                console.log("adnan")
+            }, 2000);
+
+        document.querySelector(".stop").addEventListener("click",(e)=>{
+            clearTimeout(setTime)
+        })
+    </script>
+</html>
+
+

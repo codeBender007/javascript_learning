@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>setInterval funciton</title>
+    </head>
+    <body>
+        <h1>setInterval</h1>
+        <input value="start" type="button" class="start">
+        <input value="stop" type="button" class="stop">
+    </body>
+    <script>
+        let changeInterval;
+        document.querySelector(".start").addEventListener("click",(e)=>{
+            let inc = 1;
+             changeInterval = setInterval(()=>{
+                document.querySelector("h1").innerHTML = `adnan ${inc++}`
+            },1000)
+        })
+        document.querySelector(".stop").addEventListener("click",(e)=>{
+            console.log("adnan")
+                clearInterval(changeInterval)
+        })
+    </script>
+</html>
