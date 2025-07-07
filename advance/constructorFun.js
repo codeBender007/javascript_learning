@@ -1,4 +1,4 @@
-// constructor function or normal function me ktne frk hote hai 
+// Question) constructor function or normal function me ktne frk hote hai 
 
 // 1) constructor function ka first letter capital hona chahiya.
 // 2) constructor function me this keyword ka use hona chahiya. 
@@ -6,6 +6,10 @@
 
 // Q ki new keyword constructor function ka ek naya object bna deta hai. 
 // jo ki new keyword ka main kaam object bananeka hi hota hai 
+
+// Question) hame constructor function banane ki need q padti hai.
+// ans) wo sare kam ham normal  function se bi kr skte hai jo ham constructor function se krte hai.  
+
 
 function ConFun(username , password){
      this.username = username;

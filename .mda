@@ -1,0 +1,6 @@
+javascript me primitiveData type object ni hote ( Number string boolean undefined symbol ) 
+lkn jab ham primitiveData type ko object ke jese use krte h to js use automatically object me convert krdeta hai. 
+const str = new String("1234")
+
+or js me array , String , Function ya sab object hi hote hai. ya teeno object ki bi properties use kr skte hai. 
+or javascript me jo cheez properties ya method hold kr skti hai wo object hi hoti hai.  
